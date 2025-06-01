@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de inputs</title>
+</head>
+<body>
+    <h1>Tipos de inputs</h1>
+    <br>
+    <h2>Tipo texto</h2>
+
+    <form action="">
+        <label for="text">Tipo Text</label>
+        <input type="text" name="text" id="text">
+        <br>
+        <!--Este input es exclusivo para texto-->
+
+        <label for="search">Tipo Search</label>
+        <input type="search" name="search" id="search">
+        <br>
+        <!--Este input es exclusivo para busquedas-->
+
+        <label for="url">Url</label>
+        <input type="url" name="url" id="url">
+        <br>
+        <!--Este input es exclusivo para ingresar url validas-->
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <!--Este input es exclusivo para ingresar correos electronicos-->
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <!--Este input es exclusivo para ingresar contraseñas-->
+
+        <label for="">Campo de texto</label>
+        <textarea name="textarea" id="textarea"></textarea>
+        <br>
+        <!--Este input es exclusivo para textos largos-->
+        <hr>
+        <br>
+        <h2>Tipos de inputs numericos</h2>
+
+        <label for="number">Number</label>
+        <input type="number" name="number" id="number">
+        <br>
+        <!--Este input es exclusivo para ingresar numeros-->
+
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range">
+        <br>
+        <!--Este input es exclusivo para ingresar rangos-->
+        <hr>
+        <br>
+        <h2>Tipos de inputs de fecha y horas</h2>
+
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <!--Este input es exclusivo para ingresar fechas-->
+
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+        <br>
+        <!--Este input es exclusivo para ingresar horas-->
+
+        <label for="datetime-local">Datetime-local</label>
+        <input type="datetime-local" name="datetime-local" id="datetime-local">
+        <br>
+        <!--Este input es exclusivo para ingresar fechas y horas-->
+        <label for="">Mes</label>
+        <input type="month" name="month" id="month">
+        <br>
+        <!--Este input es exclusivo para ingresar meses-->
+        <label for="">Semana</label>
+        <input type="week" name="week" id="week">
+        <br>
+        <!--Este input es exclusivo para ingresar semanas-->
+        <hr>
+        <br>
+        <h2>Inputs de seleccion</h2> <br>
+        <h2>Tipos de inputs de archivos</h2> <br>
+        <label for="">Radio Button</label>
+        <input type="radio" name="radio" id="radio">
+        <br>
+        <!--Este input es exclusivo para seleccionar una opcion-->
+
+        <label for="checkbox">Checkbox</label>
+        <input type
+        ="checkbox" name="checkbox" id="checkbox">
+        <br>
+        <!--Este input es exclusivo para seleccionar varias opciones-->
+
+        <label for="">Select - Option</label>
+        <select name="select" id="select">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+        </select>
+        <br>
+        <!--Este input es exclusivo para seleccionar opciones de un select-->
+
+        <label for="">Select - Option Multiple</label>
+        <select name="select" id="select" multiple>
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+        </select>
+        <br>
+        <!--Este input es exclusivo para seleccionar varias opciones de un select-->
+
+        <label for="">datalist</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="1">Chrome</option>
+            <option value="2">Firefox</option>
+            <option value="3">Internet Explorer</option>
+            <option value="4">Opera</option>
+            <option value="5">Safari</option>
+        </datalist>
+        <br>
+        <!--Este input es exclusivo para seleccionar opciones de un datalist-->
+
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <!--Este input es exclusivo para ingresar colores-->
+        <hr>
+        <br>
+
+        <h2>Tipos de inputs de archivos</h2> <br>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file">
+        <br>
+        <!--Este input es exclusivo para ingresar archivos-->
+        <hr>
+        <label for="tel">Tel</label>
+        <input type="tel" name="tel" id="tel">
+        <br>
+        <!--Este input es exclusivo para ingresar numeros de telefono-->
+        <hr>
+
+        <h2>Botones</h2> <br>
+
+        <label for="submit">Submit</label>
+        <input type="submit" name="submit" id="submit">
+        <br>
+        <!--Este input es exclusivo para enviar formularios-->
+        <label for="">Boton tipo imagen</label><br> 
+        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQrn353EywMHyzaSlTdKVdsEibBQr75aLu1A&s" alt="Google">
+        <br>
+        <!--Este input es exclusivo para enviar formularios con una imagen-->
+
+        <label for="reset">Reset</label>
+        <input type="reset" name="reset" id="reset">
+        <br>
+        <!--Este input es exclusivo para resetear formularios-->
+
+        <label for="button">Button sin funcionalidad</label>
+        <input type="button" name="button" id="button">
+        <button>Boton simple/sin funcionalidad para editar con JS o lo que sea</button>
+        <br>
+        <!--Este input es exclusivo para botones-->
+        <hr>
+        <br>
+        <h2>Inputs barra de progreso</h2> <br>
+        <label for="progress">Progress</label>
+        <progress id="progress" value="50" max="100"></progress>
+
+    </form>
+</body>
+</html>
