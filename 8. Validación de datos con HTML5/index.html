@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos y validacion en HTML</title>
+</head>
+<body>
+    <h2>Atributos y validacion en HTML</h2> <br>
+    <form action="">
+        <label for="">placeholder es para que se vea una especie de shadow:</label>
+        <br>
+        <input type="text" placeholder="Inserte texto">
+        <!--Placeholder es para que se vea una especie de shadow-->
+        <br><br>
+        <label for="">autofocus es para que el cursor se posicione en el input automaticamente:</label>
+        <br>
+        <input type="text" autofocus>
+        <!--Autofocus es para que el cursor se posicione en el input-->
+        <br><br>
+        <label for="">autocomplete es para que no se muestren sugerencias:</label>
+        <br>
+        <input type="text" autocomplete="off">
+        <!--Autocomplete es para que no se muestren sugerencias-->
+        <br><br>
+
+        <select multiple>
+            <option value="">Opcion 1</option>
+            <option value="">Opcion 2</option>
+            <option value="">Opcion 3</option>
+        </select>
+
+        <hr>
+
+        <h2>Validacion</h2> <br>
+
+        <label for="">required es para que el campo sea obligatorio:</label>
+        <br>
+        <input type="text" required>
+        <!--Required es para que el campo sea obligatorio-->
+        <br><br>
+
+        <label for="">disabled es para que el campo no se pueda editar:</label>
+        <br>
+        <input type="text" disabled value="8">
+        <!--Disabled es para que el campo no se pueda editar-->
+        <br><br>
+
+        <label for="">Readonly es para que sea solo lectura y el usuario no lo pueda modificar</label>
+        <br>
+        <input type="text" readonly value="No se puede escribir">
+        <!--Readonly es para que sea solo lectura y el usuario no lo pueda modificar-->
+        <br><br>
+
+        <label for="">Min y Max es para que el usuario pueda poner un numero minimo y maximo de caracteres</label>
+        <br>
+        <input type="number" min="5" max="10" placeholder="de 5 a 10">
+        <!--Min y Max es para que el usuario pueda poner un numero minimo y maximo de caracteres-->
+        <br><br>
+
+        <label for="">Tambien el minlength y el maxlength se pueden convinar, ideal para contraseñas</label>
+        <br>
+        <input type="password" minlength="5" maxlength="10">
+        <!--Tambien el minlength y el maxlength se pueden convinar, ideal para contraseñas-->
+        <br><br>   
+
+        <label for="">minlength es para que el campo tenga un minimo de caracteres:</label>
+        <br>
+        <input type="password" minlength="5">
+        <!--Minlength es para que el campo tenga un minimo de caracteres-->
+        <br><br>
+
+        <label for="">maxlength es para que el campo tenga un maximo de caracteres:</label>
+        <br>
+        <input type="text" maxlength="10">
+        <!--Maxlength es para que el campo tenga un maximo de caracteres-->
+        <br><br>
+
+        <label for="">pattern es para que el campo tenga un patron de caracteres:</label>
+        <br>
+        <input type="text" pattern="[A-Za-z]{3}[0-9]{2}" placeholder="Patron de 3 letras y 2 numeros">
+        <!--Pattern es para que el campo tenga un patron de caracteres-->
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
